@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nina1012/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nina1012/calculator/issues"
+  },
+  "homepage": "https://github.com/nina1012/calculator#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

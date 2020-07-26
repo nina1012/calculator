@@ -1,0 +1,91 @@
+$bg-black: rgb(31, 31, 31);
+$bg-operator: #464646;
+$bg-number: #8b8f92;
+$grid-gap: 3px;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  width: 450px;
+  height: 550px;
+  display: grid;
+  grid-template-rows: 80px 100px 1fr;
+  font-size: 3rem;
+  font-weight: 800;
+  grid-gap: $grid-gap;
+  overflow: hidden;
+  background-color: $bg-black;
+  color: white;
+  box-shadow: 0 0 0 15px rgba($bg-black, 0.9);
+
+  .output {
+    text-align: right;
+    padding: 3rem;
+  }
+
+  .first-row {
+    display: grid;
+    grid-template-columns: 33.7rem auto;
+    grid-gap: $grid-gap;
+  }
+
+  .input {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, auto));
+    grid-gap: $grid-gap;
+  }
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.number {
+  background-color: $bg-number;
+  &:hover {
+    background-color: #9da3a8;
+  }
+}
+
+.operation {
+  background-color: $bg-operator;
+  &:hover {
+    background-color: #5a5a5a;
+  }
+}
+
+.empty-div {
+  background-color: $bg-operator;
+}
+.clear {
+  background-color: #c60707;
+
+  &:hover {
+    background-color: #da0808;
+  }
+}
