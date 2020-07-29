@@ -19,7 +19,7 @@ body {
   width: 450px;
   height: 550px;
   display: grid;
-  grid-template-rows: 80px 100px 1fr;
+  grid-template-rows: 120px 100px 1fr;
   font-size: 3rem;
   font-weight: 800;
   grid-gap: 3px;
@@ -52,9 +52,9 @@ body {
   .number:hover {
     background-color: #9da3a8; }
 
-.operation {
+.operator {
   background-color: #464646; }
-  .operation:hover {
+  .operator:hover {
     background-color: #5a5a5a; }
 
 .empty-div {
@@ -64,3 +64,7 @@ body {
   background-color: #c60707; }
   .clear:hover {
     background-color: #da0808; }
+
+.equal {
+  grid-column: 2/4;
+  background-color: #464646; }
