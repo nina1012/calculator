@@ -13,13 +13,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: aliceblue; }
 
 .calculator {
   width: 450px;
   height: 550px;
   display: grid;
-  grid-template-rows: 120px 100px 1fr;
+  grid-template-rows: 100px 100px 1fr;
   font-size: 3rem;
   font-weight: 800;
   grid-gap: 3px;
@@ -28,8 +29,10 @@ body {
   color: white;
   box-shadow: 0 0 0 15px rgba(31, 31, 31, 0.9); }
   .calculator .output {
-    text-align: right;
-    padding: 3rem; }
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
   .calculator .first-row {
     display: grid;
     grid-template-columns: 33.7rem auto;

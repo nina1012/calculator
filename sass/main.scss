@@ -21,13 +21,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: aliceblue;
 }
 
 .calculator {
   width: 450px;
   height: 550px;
   display: grid;
-  grid-template-rows: 120px 100px 1fr;
+  grid-template-rows: 100px 100px 1fr;
   font-size: 3rem;
   font-weight: 800;
   grid-gap: $grid-gap;
@@ -37,8 +38,10 @@ body {
   box-shadow: 0 0 0 15px rgba($bg-black, 0.9);
 
   .output {
-    text-align: right;
     padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .first-row {
