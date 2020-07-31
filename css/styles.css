@@ -3,10 +3,12 @@
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   box-sizing: border-box;
@@ -14,7 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: aliceblue; }
+  background-color: aliceblue;
+}
 
 .calculator {
   width: 450px;
@@ -27,47 +30,61 @@ body {
   overflow: hidden;
   background-color: #1f1f1f;
   color: white;
-  box-shadow: 0 0 0 15px rgba(31, 31, 31, 0.9); }
-  .calculator .output {
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-  .calculator .first-row {
-    display: grid;
-    grid-template-columns: 33.7rem auto;
-    grid-gap: 3px; }
-  .calculator .input {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(100px, auto));
-    grid-gap: 3px; }
+  box-shadow: 0 0 0 15px rgba(31, 31, 31, 0.9);
+}
+.calculator .output {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.calculator .first-row {
+  display: grid;
+  grid-template-columns: 33.7rem auto;
+  grid-gap: 3px;
+}
+.calculator .input {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, auto));
+  grid-gap: 3px;
+}
 
 .key {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.1rem; }
-  .key:hover {
-    cursor: pointer; }
+  border-radius: 0.1rem;
+}
+.key:hover {
+  cursor: pointer;
+}
 
 .number {
-  background-color: #8b8f92; }
-  .number:hover {
-    background-color: #9da3a8; }
+  background-color: #8b8f92;
+}
+.number:hover {
+  background-color: #9da3a8;
+}
 
 .operator {
-  background-color: #464646; }
-  .operator:hover {
-    background-color: #5a5a5a; }
+  background-color: #464646;
+}
+.operator:hover {
+  background-color: #5a5a5a;
+}
 
 .empty-div {
-  background-color: #464646; }
+  background-color: #464646;
+}
 
 .clear {
-  background-color: #c60707; }
-  .clear:hover {
-    background-color: #da0808; }
+  background-color: #c60707;
+}
+.clear:hover {
+  background-color: #da0808;
+}
 
 .equal {
   grid-column: 2/4;
-  background-color: #464646; }
+  background-color: #464646;
+}
